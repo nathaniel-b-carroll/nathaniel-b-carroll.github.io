@@ -1,0 +1,29 @@
+- ToDo 
+    - modify picture when screen smol
+    - scrolldown button is still off a smidge to the right. 
+    - populate introduction
+    - make projects cards links.
+    - make get-in-touch section work?
+        - maybe send myself an email with each submission?
+    - background image, maybe?
+    
+    - learn_more will be the main subpage HTML, modified to fit other subpages. 
+    - neeed to modify subpages to be more better. 
+
+
+
+
+howdy folks, 
+
+Thank you for visiting my website! This website is 
+a simple introduction to who I am and what I do. 
+
+
+<div id="nav-footer-heading">
+      <div id="nav-footer-avatar"><img src="../assets/images/favicon.png"/></div>
+      <div id="nav-footer-titlebox"><a id="nav-footer-title" href="../index.html" target="_blank">Nathaniel</a><span id="nav-footer-subtitle">Creator</span></div>
+      <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+    </div>
+    <div id="nav-footer-content">
+      <Lorem>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Lorem>
+    </div>
