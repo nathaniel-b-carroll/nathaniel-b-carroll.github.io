@@ -84,7 +84,7 @@ i{
 nav{
     position: -webkit-sticky; 
     position: sticky;
-    display: flex; 
+    display: fixed; 
     justify-content: space-between; 
     width: 100%; 
     height: 90px;
