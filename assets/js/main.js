@@ -27,11 +27,11 @@
 
 /* TYPING EFFECT */
     var typed = new Typed(".typedText",{
-        strings : ["an Engineer", "a Handyman", "a Programmer", "smart as fuck"],
+        strings : ["an Engineer", "a Handyman", "a Programmer"],
         loop : true,
-        typeSpeed : 110, 
-        backSpeed : 90, 
-        backDelay : 2000
+        typeSpeed : 120, 
+        backSpeed : 120, 
+        backDelay : 1500
     })
 /* SCROLL REVEAL ANIMATION */
     const sr = ScrollReveal({
