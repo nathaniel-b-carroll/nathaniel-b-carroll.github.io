@@ -82,7 +82,7 @@ i{
 
 /* NAVIGATION BAR */
 nav{
-    position: absolute; 
+    position: sticky; 
     display: flex; 
     justify-content: space-between; 
     width: 100%; 
