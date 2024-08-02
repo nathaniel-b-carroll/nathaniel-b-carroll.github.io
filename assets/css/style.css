@@ -82,7 +82,8 @@ i{
 
 /* NAVIGATION BAR */
 nav{
-    position: sticky; 
+    position: -webkit-sticky; 
+    position: sticky;
     display: flex; 
     justify-content: space-between; 
     width: 100%; 
