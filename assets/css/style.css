@@ -650,6 +650,10 @@ footer{
     }
     .featured-box{
         width: 100%;
+        min-height: 100%;
+    }
+    .scroll-icon-box{
+        display: none;
     }
     .about{
         width: 100%;
