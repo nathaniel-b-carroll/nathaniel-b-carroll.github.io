@@ -38,7 +38,7 @@
         origin: 'top', 
         distance: '80px', 
         duration: 2000, 
-        reset: true
+        reset: false
     })
 
     /* HOME */
@@ -60,7 +60,7 @@
         origin: 'left', 
         distance: '80px',
         duration: 2000,
-        reset: true
+        reset: false
     })
 
     srLeft.reveal('.about-info', {delay: 100})
@@ -71,7 +71,7 @@
         origin: 'right', 
         distance: '80px',
         duration: 2000, 
-        reset: true
+        reset: false
     })
 
     srRight.reveal('.skills-box', {delay: 100})
@@ -82,7 +82,7 @@
         origin: 'bottom',
         distance: '100px',
         duration: 2000,
-        reset: true,
+        reset: false
     })
 
     srBottom.reveal('.scroll-icon-box',{delay: 300})
