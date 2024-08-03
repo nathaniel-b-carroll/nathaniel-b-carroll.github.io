@@ -93,7 +93,7 @@ nav{
     background: var(--body-color);
     padding-inline: 9vw;
     transition: .3s;
-    z-index: 100;
+    z-index: 1000;
 }
 .nav-logo{
     position: relative;
@@ -167,7 +167,7 @@ nav{
 .featured-box{
     position: relative; 
     display: flex;
-    height: 100vh;
+    height: 90vh;
     min-height: 800px;
 }
 
@@ -239,7 +239,7 @@ nav{
     display: flex;
     justify-content: right;
     align-content: center;
-    min-height: 60vh;
+    min-height: 50vh;
     width: 50%;
 }
 .image{
@@ -307,6 +307,7 @@ nav{
 .top-header{
     text-align: center;
     margin-bottom: 5em;
+    margin-top: 2em;
 }
 .top-header h1{
     font-weight: 600;
