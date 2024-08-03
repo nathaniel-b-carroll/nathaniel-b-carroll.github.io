@@ -263,6 +263,7 @@ nav{
 }
 .scroll-icon-box{
     position: absolute;
+    bottom: 2%;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
