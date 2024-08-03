@@ -629,6 +629,9 @@ footer{
     .project-container{
         justify-content: center;
     }
+    .scroll-icon-box{
+        display: none;
+    }
     .project-box{
         width: 80%;
     }
