@@ -265,7 +265,7 @@ nav{
     position: absolute;
     bottom: 2%;
     bottom: 20px;
-    left: 50%;
+    margin-left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -344,12 +344,16 @@ h3{
     font-size: 15px;
     color: #777;
 }
+.about-btn{
+    padding: 50px;
+}
 .about-btn button{
     position: relative;
     right: 20px;
     background: var(--first-color);
     color: var(--color-white);
     border-radius: 30px;
+    margin-top: 50px;
 }
 .about-btn button:hover{
     background: var(--first-color-hover);
