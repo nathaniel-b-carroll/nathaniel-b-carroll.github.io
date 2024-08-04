@@ -673,4 +673,17 @@ footer{
     .about{
         width: 100%;
     }
+    .footer{
+        width: 100%;
+    }
+    .middle-footer, .footer-menu {
+        display: flex;
+        align-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .bottom-footer{
+        text-align: center;
+        flex-wrap: wrap;
+    }
 }
