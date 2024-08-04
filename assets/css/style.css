@@ -617,10 +617,17 @@ footer{
         justify-content: center;
         gap: 50px;
     }
-    .col{
+    .col1{
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+    .col2{
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 50px 
     }
     .about-info, 
     .contact-info{
