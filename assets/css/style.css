@@ -345,7 +345,9 @@ h3{
     color: #777;
 }
 .about-btn{
-    padding: 50px;
+    padding: auto;
+    text-align: center;
+    margin-top: auto;
 }
 .about-btn button{
     position: relative;
@@ -353,7 +355,6 @@ h3{
     background: var(--first-color);
     color: var(--color-white);
     border-radius: 30px;
-    margin-top: 50px;
 }
 .about-btn button:hover{
     background: var(--first-color-hover);
