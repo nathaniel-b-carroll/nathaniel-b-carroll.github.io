@@ -654,15 +654,6 @@ footer{
     .featured-name{
         font-size: 40px;
     }
-    .project-box{
-        width: 100%;
-    }
-    .form-inputs{
-        flex-direction: column;
-    }
-    .input-field{
-        width: 100%;
-    }
     .featured-box{
         width: 100%;
         min-height: 100%;
@@ -670,7 +661,19 @@ footer{
     .scroll-icon-box{
         display: none;
     }
+    .project-box{
+        width: 100%;
+    }
     .about{
+        width: 100%;
+    }
+    .contact-info p{
+        font-size: smaller;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
         width: 100%;
     }
     .footer{
