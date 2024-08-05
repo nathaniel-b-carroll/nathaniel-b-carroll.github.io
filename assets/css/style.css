@@ -160,7 +160,7 @@ nav{
 }
 /* WRAPPER DESIGN */ 
 .wrapper{
-    padding-inline: 10vw;
+    padding-inline: 5vw;
 }
 
 /* FEATURED BOX */
@@ -682,11 +682,14 @@ footer{
     .middle-footer, .footer-menu {
         display: flex;
         align-content: space-evenly;
-        flex-direction: column;
+        font-size: smaller;
         flex-wrap: wrap;
     }
     .bottom-footer{
         text-align: center;
         flex-wrap: wrap;
+    }
+    .bottom-footer p{
+        font-size: small;
     }
 }
