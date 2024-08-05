@@ -267,9 +267,9 @@ nav{
 }
 .scroll-icon-box{
     position: absolute;
-    margin: 50%;
-    top: auto;
-    bottom: auto;
+    margin-left: 50%;
+    margin-right: 50%;
+    top: 85%;
     transform: translateX(-50%);
     text-align: center;
 }
