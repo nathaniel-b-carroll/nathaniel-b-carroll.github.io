@@ -30,15 +30,20 @@ a {
 }
 body{
     background: var(--body-color);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .container{
     width: 100%; 
     position: relative; 
+    overflow-x: hidden;
 }
 
 /*SMOOTH SCROLLING*/
 html{
     scroll-behavior: smooth; 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*CHANGE SCROLL BAR DESIGN*/ 
@@ -161,6 +166,8 @@ nav{
 /* WRAPPER DESIGN */ 
 .wrapper{
     padding-inline: 5vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* FEATURED BOX */
