@@ -263,9 +263,9 @@ nav{
 }
 .scroll-icon-box{
     position: absolute;
-    bottom: 2%;
-    bottom: 20px;
-    margin-left: 50%;
+    margin: 50%;
+    top: auto;
+    bottom: auto;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -300,6 +300,14 @@ nav{
     gap: 50px;
 }
 .col{
+    display: flex;
+    width: 50%;
+}
+.col1{
+    display: flex;
+    width: 50%;
+}
+.col2{
     display: flex;
     width: 50%;
 }
