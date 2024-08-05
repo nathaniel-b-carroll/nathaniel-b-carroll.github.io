@@ -690,6 +690,6 @@ footer{
         flex-wrap: wrap;
     }
     .bottom-footer p{
-        font-size: small;
+        font-size: smaller;
     }
 }
