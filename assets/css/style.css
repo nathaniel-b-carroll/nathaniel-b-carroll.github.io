@@ -622,6 +622,11 @@ footer{
         justify-content: center;
         gap: 50px;
     }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
     .col1{
         display: flex;
         justify-content: center;
