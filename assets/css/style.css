@@ -69,7 +69,7 @@ main, footer {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: .3s;
+    transition: .2s;
 }
 .btn>i{
     margin-left: 10px;
@@ -96,7 +96,7 @@ nav{
     line-height: 90px;
     background: var(--body-color);
     padding-inline: 9vw;
-    transition: .3s;
+    transition: .2s;
     z-index: 1000;
 }
 .nav-logo{
@@ -159,6 +159,7 @@ nav{
     border-radius: 50%;
 }
 .nav-button{
+    display: fixed;
     text-decoration: none;
     color: var(--text-color-second)
 }
@@ -269,7 +270,7 @@ nav{
     position: absolute;
     margin-left: 50%;
     margin-right: 50%;
-    bottom: 20px;
+    bottom: 5%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -564,13 +565,44 @@ footer{
 }
 /* MEDIA QUERY 1024PX RESPONSIVE */
 @media only screen and (max-width: 1024px) {
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        left: 0;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, .7);
+        backdrop-filter: blur(30px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .2s;
+    }
+    .nav_menu_list{
+        flex-direction: column;
+    }
+    .nav-menu-btn{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    .scroll-icon-box{
+        bottom: 100px;
+    }
     .featured-text{
         padding: 0;
     }
     .image, .image img {
         width: 320px;
         height: 320px;
-    }
+    } 
 }
 /* MEDIA QUERY 900PX RESPONSIVE */
 @media only screen and (max-width: 900px) {
@@ -588,7 +620,7 @@ footer{
         justify-content: center;
         align-items: center;
         background: rgba(255, 255, 255, .7);
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(30px);
         width: 100%;
         min-height: 450px;
         height: 90vh;
@@ -622,7 +654,7 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 75px;
     }
     .image, .image img {
         width: 150px;
