@@ -108,6 +108,5 @@
         })
     }
 
-
     window.addEventListener('scroll', scrollActive)
     
