@@ -6,14 +6,14 @@
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
 
-    --text-color-second: rgb(68, 68, 68);
+    --text-color-second: #777;
     --text-color-third: rgb(30, 159, 171);
 
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
 
     --second-color: rgb(0, 201, 255);
-    --third-color: rgb(192, 166, 49);;
+    --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 a {
@@ -25,7 +25,7 @@ a {
     margin: 0;
     padding: 0; 
     box-sizing: border-box; 
-    font-family: 'Kantumry Pro', sans-serif; 
+    font-family: 'Kantumruy Pro', sans-serif; 
 }
 body{
     background: var(--body-color);
@@ -95,8 +95,9 @@ nav{
     line-height: 90px;
     background: var(--body-color);
     padding-inline: 9vw;
-    transition: .2s;
+    transition: all 0.3s ease;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .nav-logo{
     position: relative;
@@ -160,7 +161,7 @@ nav{
 .nav-button{
     display: fixed;
     text-decoration: none;
-    color: var(--text-color-second)
+    color: var(--text-color-second);
 }
 /* WRAPPER DESIGN */ 
 .wrapper{
@@ -291,7 +292,7 @@ nav{
 }
 .scroll-btn:hover{
     text-decoration: none;
-    color: var(--text-color-second)
+    color: var(--text-color-second);
 }
 
 /* MAIN BOX */
@@ -521,7 +522,7 @@ textarea{
     background: var(--second-color);
     color: var(--color-white);
 }
-.form-button>btn:hover{
+.form-button>.btn:hover{
     background: #00b5e7;
 }
 .form-button i{
@@ -573,25 +574,59 @@ footer{
     }
     .nav-menu{
         position: fixed;
-        top: 80px;
+        top: 90px;
         left: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        background: rgba(255, 255, 255, .7);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(30px);
         width: 100%;
         min-height: 450px;
-        height: 90vh;
-        transition: .2s;
+        height: calc(100vh - 90px);
+        transition: all 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        padding-top: 2rem;
     }
     .nav_menu_list{
         flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 0 2rem;
+    }
+    .nav_list{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+        padding: 15px 0;
+    }
+    .nav_list:last-child{
+        border-bottom: none;
+    }
+    .nav-link{
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 0;
+        margin: 0;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+    }
+    .nav-link:hover{
+        background: rgba(110, 87, 224, 0.1);
+        color: var(--first-color);
     }
     .nav-menu-btn{
         display: flex; 
         align-items: center;
         justify-content: center;
+    }
+    .nav-menu-btn i{
+        transition: transform 0.3s ease;
+    }
+    .nav-menu.responsive + .nav-button + .nav-menu-btn i{
+        transform: rotate(90deg);
     }
     .scroll-icon-box{
         bottom: 100px;
@@ -614,20 +649,48 @@ footer{
     }
     .nav-menu{
         position: fixed;
-        top: 80px;
+        top: 90px;
         left: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        background: rgba(255, 255, 255, .7);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(30px);
         width: 100%;
         min-height: 450px;
-        height: 90vh;
-        transition: .2s;
+        height: calc(100vh - 90px);
+        transition: all 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        padding-top: 2rem;
     }
     .nav_menu_list{
         flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 0 2rem;
+    }
+    .nav_list{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+        padding: 15px 0;
+    }
+    .nav_list:last-child{
+        border-bottom: none;
+    }
+    .nav-link{
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 15px 0;
+        margin: 0;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+    }
+    .nav-link:hover{
+        background: rgba(110, 87, 224, 0.1);
+        color: var(--first-color);
     }
     .nav-menu-btn{
         display: flex; 
@@ -681,7 +744,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        gap: 50px 
+        gap: 50px;
     }
     .about-info, 
     .contact-info{
@@ -740,5 +803,122 @@ footer{
     }
     .bottom-footer p{
         font-size: smaller;
+    }
+}
+
+/* LEARN MORE PAGE SPECIFIC STYLES */
+
+/* Learn More Content Sections */
+.learn-more-section {
+    justify-content: center;
+    height: auto;
+    padding: 5em 0;
+    margin-top: 0;
+    min-height: auto;
+}
+
+.learn-more-col {
+    position: relative;
+    display: block;
+    padding-top: 5em;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+/* Enhanced about-info for learn more page */
+.learn-more-section .about-info {
+    position: relative;
+    display: block;
+    align-items: left;
+    flex-direction: column;
+    padding: 40px 30px;
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.learn-more-section .about-info h1 {
+    color: var(--text-color-third);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.learn-more-section .about-info h3 {
+    color: var(--third-color);
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.learn-more-section .about-info hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, var(--first-color), var(--second-color));
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+.learn-more-section .about-info p {
+    text-align: left;
+    font-size: 16px;
+    color: var(--text-color-second);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.learn-more-section .about-info b {
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+.learn-more-section .about-info small {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}
+
+
+/* Responsive design for learn more page */
+@media only screen and (max-width: 768px) {
+    .learn-more-section .about-info {
+        padding: 25px 20px;
+    }
+    .learn-more-section .about-info h1 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .learn-more-section .about-info {
+        width: 95%;
+        margin: 0 auto 20px auto;
+        padding: 20px 15px;
+    }
+    .learn-more-section {
+        padding: 3%;
+        overflow-x: hidden;
+    }
+    
+    /* Enhanced mobile menu for small screens */
+    .nav-menu{
+        padding-top: 1rem;
+    }
+    .nav_list{
+        padding: 10px 0;
+    }
+    .nav-link{
+        font-size: 16px;
+        padding: 12px 0;
+    }
+    
+    /* Ensure menu doesn't interfere with content */
+    .nav-menu.responsive{
+        height: auto;
+        max-height: calc(100vh - 90px);
     }
 }
