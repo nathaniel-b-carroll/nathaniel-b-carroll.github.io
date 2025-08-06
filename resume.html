@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel Carroll - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 3px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        
+        .company-role {
+            font-weight: bold;
+            font-size: 12px;
+            color: #2c3e50;
+        }
+        
+        .date {
+            font-size: 11px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .company-desc {
+            font-size: 10px;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .job-content ul {
+            margin-left: 18px;
+            margin-bottom: 12px;
+        }
+        
+        .job-content li {
+            font-size: 11px;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+        
+        .job-content strong {
+            color: #2c3e50;
+        }
+        
+        .summary-text {
+            font-size: 11px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+        
+        .education-item {
+            margin-bottom: 8px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 12px;
+            color: #2c3e50;
+        }
+        
+        .school {
+            font-size: 11px;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            font-size: 11px;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+        
+        .skill-list {
+            line-height: 1.3;
+            color: #555;
+        }
+        
+        .additional-info {
+            font-size: 11px;
+            line-height: 1.4;
+        }
+        
+        .additional-info strong {
+            color: #2c3e50;
+        }
+        
+        @media print {
+            body {
+                padding: 0.3in;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                margin-bottom: 15px;
+            }
+            
+            .job-content {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nathaniel Carroll</h1>
+        <div class="contact-info">
+            <strong>nathaniel.b.carroll@outlook.com</strong> | <strong>(512) 656-1997</strong> | <strong>Austin, TX</strong><br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nathaniel-b-carroll">linkedin.com/in/nathaniel-b-carroll</a> | 
+            <strong>Portfolio:</strong> <a href="https://nathaniel-b-carroll.github.io">nathaniel-b-carroll.github.io</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary-text">
+            Field Service Engineer with 3+ years specializing in Atomic Layer Deposition (ALD) and Chemical Vapor Deposition (CVD) semiconductor manufacturing equipment. Proven expertise in equipment installation, commissioning, and customer support across global semiconductor fabs. Strong background in thin film deposition processes, vacuum technology, and customer relationship management with 100% travel experience.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="degree">Bachelor of Science - Information Technology, Cyber Security and Entrepreneurship</div>
+            <div class="school">University of Texas at Tyler | December 2021</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="job-content">
+            <div class="job-header">
+                <div class="company-role">Tokyo Electron America | Start-Up Engineer</div>
+                <div class="date">Apr 2022 - Present</div>
+            </div>
+            <div class="company-desc">Leading Semiconductor Equipment Manufacturer</div>
+            <ul>
+                <li><strong>Installed and commissioned ALD/CVD semiconductor manufacturing equipment</strong> at customer sites, achieving on-time completions across 20+ installations</li>
+                <li><strong>Managed technical customer relationships</strong> during equipment start-up, maintaining customer satisfaction through proactive communication and rapid issue resolution</li>
+                <li><strong>Traveled 100% to customer facilities</strong> including IBM, Texas Instruments, and Intel fabs, providing technical support for atomic layer deposition and chemical vapor deposition processes</li>
+                <li><strong>Led equipment troubleshooting and optimization</strong> for thin film deposition processes, reducing unscheduled downtime substantially through predictive maintenance protocols</li>
+                <li><strong>Interfaced directly with customer process engineers</strong> to optimize ALD/CVD recipes for advanced node applications (14nm→3nm technologies)</li>
+                <li><strong>Conducted training and onboarding</strong> for customer technical teams on ALD/CVD equipment operation and maintenance procedures</li>
+            </ul>
+        </div>
+
+        <div class="job-content">
+            <div class="job-header">
+                <div class="company-role">Stiles Farm Foundation | Technical Assistant</div>
+                <div class="date">Jan 2021 - Dec 2021</div>
+            </div>
+            <div class="company-desc">Research Farm partnered with Texas A&M AgriLife Extension</div>
+            <ul>
+                <li><strong>Conducted hands-on maintenance</strong> of heavy machinery and automated systems, ensuring operational efficiency</li>
+                <li><strong>Coordinated implementation of aquaponic system</strong> utilized to educate local ISD students</li>
+                <li><strong>Supervised and trained</strong> interns, new employees, and post-graduate students on technical procedures and safety protocols</li>
+                <li><strong>Managed livestock operations</strong> including three herds totaling 150 cattle</li>
+            </ul>
+        </div>
+
+        <div class="job-content">
+            <div class="job-header">
+                <div class="company-role">Mallard Run Apartment Complex | Service Technician</div>
+                <div class="date">Jun 2015 - Jan 2021</div>
+            </div>
+            <div class="company-desc">Multi-unit housing facility</div>
+            <ul>
+                <li><strong>Supervised and trained new technical staff</strong> with focus on improving team efficiency and resident satisfaction</li>
+                <li><strong>Performed preventative and corrective maintenance</strong> across 100+ residential units, maintaining tenant satisfaction</li>
+                <li><strong>Managed work order systems</strong> and coordinated with external contractors for specialized repairs</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Proficiencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Process Technologies:</div>
+                <div class="skill-list">Atomic Layer Deposition (ALD), Thermal ALD, Plasma-Enhanced ALD (PEALD), precursor chemistry, Chemical Vapor Deposition (CVD), PECVD, LPCVD, thin film deposition processes, semiconductor manufacturing, vacuum technology, plasma systems, process control</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Equipment & Systems:</div>
+                <div class="skill-list">Tokyo Electron ALD/CVD platforms, multi-station reactors, vacuum leak detection, plasma diagnostics, process monitoring, AMHS/OHV protocols, recipe management</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Software & Programming:</div>
+                <div class="skill-list">Linux, Windows, MS Office Suite, scripting, database management, system administration, technical documentation, customer training materials</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Additional Skills:</div>
+                <div class="skill-list">Equipment installation, commissioning, customer support, project management, timeline coordination, resource allocation, stakeholder communication, root cause analysis, systematic troubleshooting, process optimization</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Leadership Experience</h2>
+        
+        <div class="job-content">
+            <div class="job-header">
+                <div class="company-role">Opening Works Gallery | Founder</div>
+                <div class="date">Oct 2021 - Jan 2022</div>
+            </div>
+            <ul>
+                <li><strong>Developed smart contracts</strong> based on ERC-721/1155 standards for NFT marketplace integration</li>
+                <li><strong>Curated digital artwork portfolio</strong> and managed artist relationships for blockchain-based gallery</li>
+            </ul>
+        </div>
+
+        <div class="job-content">
+            <div class="job-header">
+                <div class="company-role">Axie Infinity Scholarship Team | Recruitment and Management</div>
+                <div class="date">Oct 2021 - Mar 2022</div>
+            </div>
+            <ul>
+                <li><strong>Recruited and managed international team</strong> of digital asset scholars across multiple time zones</li>
+                <li><strong>Developed comprehensive training programs</strong> resulting in 40% performance improvement</li>
+            </ul>
+        </div>
+
+        <div class="job-content">
+            <div class="job-header">
+                <div class="company-role">Sphere DAO | Founding Partner</div>
+                <div class="date">Jan 2022 - Apr 2022</div>
+            </div>
+            <ul>
+                <li><strong>Created educational content</strong> on decentralized finance and blockchain technology</li>
+                <li><strong>Managed social media strategy</strong> driving 200% growth in community engagement</li>
+                <li><strong>Developed technical tutorials</strong> including AvalancheGo implementation guide</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Additional Information</h2>
+        <div class="additional-info">
+            <strong>Work Authorization:</strong> Eligible to work in the U.S. with no restrictions | US Passport | China Visa<br>
+            <strong>Travel Availability:</strong> 100% travel capability with proven international experience<br>
+            <strong>References:</strong> Available upon request<br><br>
+        </div>
+    </div>
+</body>
+</html>
